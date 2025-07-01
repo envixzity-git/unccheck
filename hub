@@ -40,6 +40,12 @@ local Slider = PlayerTab:CreateSlider({
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
     end,
 })
+local Button = PlayerTab:CreateButton({
+    Name = "Reset Walkspeed"
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end,
+})
 
 -- Other Hubs Tab
 local OtherTab = Window:CreateTab("Other Hubs", 4483362458)
